@@ -1,0 +1,119 @@
+* {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: #f4f6f9;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        .navbar {
+            background-color: #8b0000;
+            color: #fff;
+            padding: 1rem 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        .navbar h1 {
+            font-size: 1.5rem;
+        }
+
+        .navbar nav ul {
+            display: flex;
+            list-style: none;
+            gap: 15px;
+        }
+
+        .navbar nav a {
+            color: #ecf0f1;
+            text-decoration: none;
+            font-weight: 500;
+            padding: 8px 12px;
+            border-radius: 4px;
+            transition: background-color 0.3s;
+        }
+
+        .navbar nav a:hover {
+            background-color: #8b0000;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 30px auto;
+            background: #ffffff;
+            padding: 25px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+        }
+
+        h2 {
+            color: #2c3e50;
+            margin-bottom: 20px;
+            border-bottom: 2px solid #8b0000;
+            padding-bottom: 8px;
+        }
+
+        .form-cadastro {
+            display: flex;
+            flex-direction: column;
+            gap: 18px;
+        }
+
+        .form-group {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .form-group label {
+            margin-bottom: 6px;
+            font-weight: 600;
+            color: #444;
+        }
+
+        .form-group input,
+        .form-group select {
+            padding: 10px 14px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 14px;
+            outline: none;
+        }
+
+        .form-group input:focus,
+        .form-group select:focus {
+            border-color: #3498db;
+        }
+
+        .btn-submit {
+            background-color: #27ae60;
+            color: white;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+            font-weight: bold;
+        }
+
+        .btn-submit:hover {
+            background-color: #219150;
+        }
+
+        /* Estilos específicos de CadastroPeca */
+        #form-peca-fornecedor {
+            background-color: #fcfcfc;
+            border-left: 4px solid #8b0000;
+            padding: 20px;
+        }
+
+        #preco-custo {
+            color: #27ae60;
+            font-weight: bold;
+        }

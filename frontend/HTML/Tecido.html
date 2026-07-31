@@ -1,11 +1,46 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tecido</title>
+    <title>Cadastro de Tecidos</title>
+    <link rel="stylesheet" href="/frontend/CSS/Tecido.css">
 </head>
 <body>
-    
-</body>
-</html>
+    <header class="navbar">
+        <h1>Sistema de Confecção</h1>
+        <nav>
+            <ul>
+                <li><a href="cadastro-fornecedor.html">Cad. Fornecedor</a></li>
+                <li><a href="cadastro-peca-fornecedor.html">Cad. Peça/Fornecedor</a></li>
+                <li><a href="tecido.html">Tecidos</a></li>
+                <li><a href="peca-de-roupa.html">Peças de Roupa</a></li>
+                <li><a href="modelagem.html">Modelagem</a></li>
+                <li><a href="listagem.html">Listagens</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container">
+        <h2>Cadastro de Tecidos</h2>
+        <form id="form-tecido" class="form-cadastro">
+            <div class="form-group">
+                <label for="nome-tecido">Nome do Tecido:</label>
+                <input type="text" id="nome-tecido" name="nome-tecido" required placeholder="Ex: Algodão Fio 30.1, Sarja, Linho">
+            </div>
+
+            <div class="form-group">
+                <label for="composicao">Composição:</label>
+                <input type="text" id="composicao" name="composicao" placeholder="Ex: 100% Algodão / 98% Algodão 2% Elastano">
+            </div>
+
+            <div class="form-group">
+                <label for="metragem">Quantidade em Estoque (Metros):</label>
+                <input type="number" step="0.1" id="metragem" name="metragem" required placeholder="0.0">
+            </div>
+
+            <button type="submit" class="btn-submit">Cadastrar Tecido</button>
+        </form>
+    </main>
+
+    <script src="/frontend/JS/Tecido.js"></script>

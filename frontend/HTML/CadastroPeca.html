@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vincular Peça ao Fornecedor</title>
+    <link rel="stylesheet" href="/frontend/CSS/CadastroPeca.css">
+</head>
+<body>
+    <header class="navbar"></header>
+
+    <main class="container">
+        <h2>Cadastro sua Peça</h2>
+        <form id="form-peca-fornecedor" class="form-cadastro">
+            <div class="form-group">
+                <label for="select-fornecedor">Selecione o Modelo</label>
+                <select id="select-fornecedor" name="select-fornecedor" required>
+                    <option value="">-- Selecione --</option>
+                    <option value="1">Saia</option>
+                    <option value="2">Calça</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="item-nome">Nome do Item </label>
+                <input type="text" id="item-nome" name="item-nome" required placeholder="Ex: Zíper Invisível 15cm">
+            </div>
+
+            <button type="submit" class="btn-submit">Cadastrar Peça</button>
+        </form>
+    </main>
+
+    <script src="/frontend/JS/CadastroPeca.js"></script>
+</body>
+</html>
