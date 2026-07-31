@@ -121,6 +121,22 @@ h2 {
     font-weight: bold;
 }
 
+.btn-excluir1 {
+    width: 100%;
+    margin-top: 15px;
+    padding: 8px;
+    background: #e74c3c;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .btn-excluir:hover {
     background: #c0392b;
 }
