@@ -3,22 +3,65 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Modelagem</title>
+    <title>Modelagens - Módulos</title>
     <link rel="stylesheet" href="/frontend/CSS/Modelagem.css">
 </head>
 <body>
-    <main>
-    <section id="cad-modelagem" class="tela">
-            <h1>Cadastrar Modelagem</h1>
-            <form onsubmit="salvarCadastro(event, 'Modelagem')">
-                <div class="form-group">
-                    <label for="modelagem-nome">Descrição da Modelagem:</label>
-                    <input type="text" id="modelagem-nome" placeholder="Ex: Saia abaixo do joelho, Blusa com mangas..." required>
-                </div>
-                <button type="submit">Salvar Modelagem</button>
-            </form>
-        </section>
-        </main>
-        <script src="/frontend/JS/Modelagem.js"></script>
+    <header class="navbar">
+        <h1>Sistema de Confecção</h1>
+        <nav>
+            <ul>
+                <li><a href="fornecedor.html">Fornecedores</a></li>
+                <li><a href="cadastro-fornecedor.html">Cad. Fornecedor</a></li>
+                <li><a href="cadastro-peca-fornecedor.html">Cad. Peça/Fornecedor</a></li>
+                <li><a href="tecido.html">Tecidos</a></li>
+                <li><a href="peca-de-roupa.html">Peças de Roupa</a></li>
+                <li><a href="modelagem.html">Modelagem</a></li>
+                <li><a href="listagem.html">Listagens</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container">
+        <h2>Ficha de Modelagem</h2>
+        <form id="form-modelagem" class="form-cadastro">
+            <div class="form-group">
+                <label for="nome-modelagem">Nome do Molde / Referência:</label>
+                <input type="text" id="nome-modelagem" required placeholder="Ex: Molde Camiseta Raglan V2">
+            </div>
+            <div class="form-group">
+                <label for="tecido-usado">Tecido Utilizado:</label>
+                <select id="tecido-usado" required>
+                    <option value="Algodão 30.1">Algodão Fio 30.1</option>
+                    <option value="Jeans Denim">Jeans Denim</option>
+                    <option value="Viscose">Viscose Premium</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="observacoes">Observações Técnicas:</label>
+                <textarea id="observacoes" rows="3" placeholder="Margem de costura de 1cm..."></textarea>
+            </div>
+            <button type="submit" class="btn-submit">Salvar Modelagem</button>
+        </form>
+
+        <h2>Modelagens Salvas</h2>
+        <div class="cards-grid" id="container-modelagens">
+            <div class="card-modulo">
+                <h3 class="card-titulo">Molde Camiseta Básica V1</h3>
+                <p class="card-detalhe"><strong>Tecido Recomendado:</strong> Algodão Fio 30.1</p>
+                <div class="card-obs">"Folga de vestibilidade de 2cm nas laterais. Bainha com gola careca."</div>
+                <button class="btn-excluir" onclick="removerCard(this)">Remover</button>
+            </div>
+
+            <div class="card-modulo">
+                <h3 class="card-titulo">Molde Calça Cargo</h3>
+                <p class="card-detalhe"><strong>Tecido Recomendado:</strong> Sarja com Elastano</p>
+                <div class="card-obs">"Incluir 4 bolsos utilitários nas pernas e elástico no cós."</div>
+                <button class="btn-excluir" onclick="removerCard(this)">Remover</button>
+            </div>
+        </div>
+    </main>
+
+    <script src="/frontend/JS/Modelagem.js"></script>
 </body>
 </html>

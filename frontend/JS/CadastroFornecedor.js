@@ -23,8 +23,6 @@ document.addEventListener('DOMContentLoaded', () => {
                         telefone
                     });
 
-                    alert(Fornecedor "${nomeEmpresa}" cadastrado com sucesso!);
-                    formFornecedor.reset();
                 });
             }
         });

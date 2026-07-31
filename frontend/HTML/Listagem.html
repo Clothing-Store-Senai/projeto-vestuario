@@ -1,42 +1,52 @@
- <!DOCTYPE html>
- <html lang="pt-BR">
- <head>
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Listagem </title>
-    <link rel="stylesheet" href="/frontend/CSS/Listagem.css">
- </head>
- <body>
-    <main>
-        <section id="listagem" class="tela active">
-            <h1>Listagem Geral de Peças de Roupa</h1>
-            <table>
-                <thead>
-                    <tr>
-                        <th>Nome da Peça</th>
-                        <th>Tecido</th>
-                        <th>Modelagem</th>
-                        <th>Fornecedor</th>
-                    </tr>
-                </thead>
-                <tbody id="tabela-pecas">
-                    <tr>
-                        <td>Saia Midi Elegante</td>
-                        <td>Algodão</td>
-                        <td>Saia abaixo do joelho</td>
-                        <td>Têxtil Brasil Ltd</td>
-                    </tr>
-                    <tr>
-                        <td>Blusa Floral</td>
-                        <td>Seda</td>
-                        <td>Blusa com mangas</td>
-                        <td>Confecções Moda Moda</td>
-                    </tr>
-                </tbody>
-            </table>
-        </section>
+    <title>Listagem Geral - Módulos</title>
+    <style>
+        
+    </style>
+</head>
+<body>
+    <header class="navbar"></header>
+
+    <main class="container">
+        <h2>Painel de Módulos Registrados</h2>
+
+        <h3>Estoque de Tecidos</h3>
+        <div class="cards-grid">
+            <div class="card-modulo tecidos">
+                <div class="card-titulo">Algodão Premium</div>
+                <div class="card-info">Composição: 100% Algodão</div>
+                <div class="card-info">Estoque: <span class="badge-qnt">150.5 m</span></div>
+            </div>
+
+            <div class="card-modulo tecidos">
+                <div class="card-titulo">Jeans Heavy Denim</div>
+                <div class="card-info">Composição: 98% Alg. 2% Elastano</div>
+                <div class="card-info">Estoque: <span class="badge-qnt">82.0 m</span></div>
+            </div>
+
+            <div class="card-modulo tecidos">
+                <div class="card-titulo">Linho Misto</div>
+                <div class="card-info">Composição: 55% Linho 45% Viscose</div>
+                <div class="card-info">Estoque: <span class="badge-qnt">45.0 m</span></div>
+            </div>
+        </div>
+
+        <h3>Insumos / Peças por Fornecedor</h3>
+        <div class="cards-grid">
+            <div class="card-modulo insumos">
+                <div class="card-titulo">Zíper Invisível 15cm</div>
+                <div class="card-info">Fornecedor: Aviamentos Silva</div>
+            </div>
+
+            <div class="card-modulo insumos">
+                <div class="card-titulo">Linha de Costura Poliéster</div>
+                <div class="card-info">Fornecedor: Aviamentos Silva</div>
+            </div>
+        </div>
     </main>
-    <script src="/frontend/JS/Listagem.js"></script>
- </body>
- </html>
- 
+</body>
+</html>

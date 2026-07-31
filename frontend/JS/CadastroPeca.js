@@ -14,8 +14,7 @@ document.addEventListener('DOMContentLoaded', () => {
                         return;
                     }
 
-                    alert(Item "${itemNome}" vinculado ao fornecedor com sucesso!);
-                    formPecaFornecedor.reset();
+                    
                 });
             }
         });
