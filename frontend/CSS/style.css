@@ -1,97 +1,191 @@
+.hero{
+    width:85%;
+    margin:50px auto;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    gap:50px;
+}
 
-        *{
-            margin:0;
-            padding:0;
-            box-sizing:border-box;
-            font-family: Arial, Helvetica, sans-serif;
-        }
+/* Fundo do header com vermelho sofisticado */
+.header {
+    background: linear-gradient(135deg, #8b0000, #8b0000); /* Vermelho escuro/vinho em gradiente */
+    padding: 24px 32px;
+    width: 100%;
+    box-sizing: border-box;
+}
 
-        body{
-            background:#f5f5f5;
-            color:#333;
-        }
+/* Organização dos botões em linha */
+.buttons {
+    display: flex;
+    gap: 12px;                  /* Espaço uniforme entre os botões */
+    flex-wrap: wrap;             /* Se a tela for pequena, eles ajustam sem quebrar */
+    align-items: center;
+}
 
-        header{
-            background:#7770ff;
-            color:white;
-            text-align:center;
-            padding:50px 20px;
-        }
+/* Remove qualquer formatação padrão das tags <a> */
+.buttons a {
+    text-decoration: none;
+}
 
-        header h1{
-            font-size:40px;
-            margin-bottom:10px;
-        }
+/* Estilo moderno para a classe .btn-fornecedor */
+.btn-fornecedor {
+    background-color: #ffffff;
+    color: #2c2c2c;
+    border: none;
+    padding: 10px 20px;
+    font-size: 15px;
+    font-weight: 600;
+    font-family: inherit;
+    border-radius: 8px;          /* Cantos arredondados */
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transition: all 0.2s ease-in-out;
+    display: flex;
 
-        header p{
-            font-size:18px;
-        }
+}
 
-        nav{
-            background:#4d44db;
-            padding:15px;
-            text-align:center;
-        }
+/* Efeito ao passar o mouse (Hover) */
+.btn-fornecedor:hover {
+    background-color: #f5f5f5;
+    color: #8b0000;              /* Texto fica no mesmo tom do vermelho */
+    transform: translateY(-2px); /* Efeito de elevação suave */
+    box-shadow: 0 6px 14px rgba(0, 0, 0, 0.3);
+}
 
-        nav a{
-            color:white;
-            text-decoration:none;
-            margin:0 15px;
-            font-weight:bold;
-        }
+/* Efeito ao clicar */
+.btn-fornecedor:active {
+    transform: translateY(0);
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+}
 
-        nav a:hover{
-            text-decoration:underline;
-        }
 
-        section{
-            width:50%;
-            margin:40px auto;
-        }
 
-        .card{
-            background:white;
-            padding:24px;
-            border-radius:15px;
-            margin-bottom:25px;
-            box-shadow:0 2px 8px rgba(0,0,0,.1);
-        }
+.texto{
+    flex:1;
+}
 
-        .card h2{
-            color:#6C63FF;
-            margin-bottom:15px;
-        }
-        .carousel-inner{
-            position: relative; 
-            width: 100%; 
-            max-width: 350px; /* aumenta aqui */ 
-            border-radius: 15px;
-            background: #e0e0e0;
-            box-shadow:  33px 33px 66px #cecece,
-             -33px -33px 66px #f2f2f2;
-        } 
+.texto h2{
+    font-size:40px;
+    color:#8b0000;
+    margin-bottom:20px;
+}
 
-        .slider { 
-            width: 800px; 
-            height: 400px; /* aumenta a altura */ 
-        } 
+.texto p{
+    font-size:18px;
+    line-height:1.8;
+    color:#555;
+}
 
-        .slide { 
-            width: 100%; 
-            height: 100%; 
-            object-fit: cover; 
-        } 
+.imagem{
+    flex:1;
+    text-align:center;
+}
 
-        ul{
-            margin-left:20px;
-            line-height:30px;
-        }
+.imagem img{
+    width:100%;
+    max-width:420px;
+    border-radius:15px;
+    box-shadow:0 10px 30px rgba(0,0,0,.2);
+}
 
-        footer{
-            background:#4d44db;
-            color:white;
-            text-align:center;
-            padding:20px;
-            margin-top:40px;
-        }
-  
+.servicos{
+    width:90%;
+    margin:60px auto;
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:25px;
+}
+
+.card{
+    background:white;
+    padding:30px;
+    border-radius:15px;
+    text-align:center;
+    box-shadow:0 5px 15px rgba(0,0,0,.1);
+    transition:.3s;
+}
+
+.card:hover{
+    transform:translateY(-10px);
+}
+
+.card h3{
+    color:#8b0000;
+    margin-bottom:15px;
+}
+
+nav{
+    display:flex;
+    justify-content:center;
+    gap:50px;
+    background:#8b0000;
+    padding:18px;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    font-size:18px;
+    transition:.3s;
+}
+
+nav a:hover{
+    color:#ffd700;
+}
+
+header{
+    background:#8b0000;
+    color:white;
+    padding:80px 20px;
+}
+
+header h1{
+    font-size:60px;
+}
+
+header p{
+    margin-top:20px;
+    font-size:22px;
+}
+
+.sobre{
+    width:80%;
+    margin:70px auto;
+    text-align:center;
+}
+
+.sobre h2{
+    color:#8b0000;
+    margin-bottom:20px;
+    font-size:38px;
+}
+
+.sobre p{
+    font-size:18px;
+    line-height:1.8;
+}
+.carousel-inner{
+position: relative; 
+    width: 100%; 
+    max-width: 500px; /* aumenta aqui */ 
+} 
+
+.slider { 
+    width: 800px; 
+    height: 400px; /* aumenta a altura */ 
+} 
+
+.slide { 
+    width: 100%; 
+    height: 100%; 
+    object-fit: cover; 
+} 
+
+.footer{
+    background: linear-gradient(135deg, #8b0000, #8b0000); /* Vermelho escuro/vinho em gradiente */
+    padding: 9px 32px;
+    width: 100%;
+    box-sizing: border-box;
+
+}

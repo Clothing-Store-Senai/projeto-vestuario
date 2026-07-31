@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modelagem</title>
+    <link rel="stylesheet" href="/frontend/CSS/Modelagem.css">
+</head>
+<body>
+    <main>
+    <section id="cad-modelagem" class="tela">
+            <h1>Cadastrar Modelagem</h1>
+            <form onsubmit="salvarCadastro(event, 'Modelagem')">
+                <div class="form-group">
+                    <label for="modelagem-nome">Descrição da Modelagem:</label>
+                    <input type="text" id="modelagem-nome" placeholder="Ex: Saia abaixo do joelho, Blusa com mangas..." required>
+                </div>
+                <button type="submit">Salvar Modelagem</button>
+            </form>
+        </section>
+        </main>
+        <script src="/frontend/JS/Modelagem.js"></script>
+</body>
+</html>
