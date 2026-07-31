@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Peça de Roupa</title>
+    <link rel="stylesheet" href="/frontend/CSS/PecRoupa.css">
+</head>
+<body>
+    <main>
+        <section id="cad-peca" class="tela">
+            <h1>Cadastrar Peça de Roupa</h1>
+            <form onsubmit="salvarPeca(event)">
+                <div class="form-group">
+                    <label for="peca-nome">Nome da Peça:</label>
+                    <input type="text" id="peca-nome" placeholder="Ex: Vestido de Verão" required>
+                </div>
+                <div class="form-group">
+                    <label for="peca-tecido">Tecido:</label>
+                    <input type="text" id="peca-tecido" placeholder="Ex: Linho, Jeans..." required>
+                </div>
+                <div class="form-group">
+                    <label for="peca-modelagem">Modelagem:</label>
+                    <select id="peca-modelagem" required>
+                        <option value="">Selecione...</option>
+                        <option value="Saia abaixo do joelho">Saia abaixo do joelho</option>
+                        <option value="Blusa com mangas">Blusa com mangas</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="peca-fornecedor">Fornecedor:</label>
+                    <select id="peca-fornecedor" required>
+                        <option value="">Selecione...</option>
+                        <option value="Têxtil Brasil Ltd">Têxtil Brasil Ltd</option>
+                        <option value="Confecções Moda Moda">Confecções Moda Moda</option>
+                    </select>
+                </div>
+                <button type="submit">Salvar Peça</button>
+            </form>
+        </section>
+    </main>
+    <script src="/frontend/JS/PecaRoupa.js"></script>
+    
+</body>
+</html>
+
